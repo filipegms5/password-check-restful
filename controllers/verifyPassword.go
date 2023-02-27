@@ -20,5 +20,5 @@ func Verify(c *gin.Context) {
 
 	verifiedPassword := models.CheckPassword(obj)
 
-	c.JSON(http.StatusOK, gin.H{"result": verifiedPassword})
+	c.JSON(http.StatusOK, verifiedPassword)
 }
